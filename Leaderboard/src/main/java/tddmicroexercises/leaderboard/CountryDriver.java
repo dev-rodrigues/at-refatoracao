@@ -28,7 +28,7 @@ public class CountryDriver implements Driver{
         if (this == obj) {
             return true;
         }
-        if (obj == null || !(obj instanceof CountryDriver)) {
+        if (!(obj instanceof CountryDriver)) {
             return false;
         }
         CountryDriver other = (CountryDriver) obj;
