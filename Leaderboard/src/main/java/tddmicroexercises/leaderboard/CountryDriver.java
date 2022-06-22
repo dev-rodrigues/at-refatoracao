@@ -1,6 +1,6 @@
 package tddmicroexercises.leaderboard;
 
-public class CountryDriver implements Driver{
+public class CountryDriver implements Driver {
     private final String name;
     private final String country;
 

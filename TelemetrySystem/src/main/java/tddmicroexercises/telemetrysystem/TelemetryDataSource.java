@@ -10,6 +10,7 @@ public class TelemetryDataSource implements TelemetryRepository{
     public Random getConnectionEventsSimulator() {
         return connectionEventsSimulator;
     }
+
     @Override
     public boolean connect(String telemetryServerConnectionString) {
         if (telemetryServerConnectionString == null ||  telemetryServerConnectionString.isEmpty()) {
