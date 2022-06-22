@@ -14,10 +14,6 @@ public class Alarm {
         this.bagOfSecurity = bagOfSecurity;
     }
 
-    public Alarm(Sensor sensor) {
-        init(sensor, new BagOfSecurity(LOW_PRESSURE_THRESHOLD, HIGH_PRESSURE_THRESHOLD));
-    }
-
     public Alarm() {
         init(new Sensor(), new BagOfSecurity(LOW_PRESSURE_THRESHOLD, HIGH_PRESSURE_THRESHOLD));
     }
