@@ -2,7 +2,6 @@ package tddmicroexercises.leaderboard;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -31,7 +30,7 @@ public class Leaderboard {
     public List<String> driverRankings() {
         Map<String, Integer> results = driverResults();
         List<String> resultsList = new ArrayList<>(results.keySet());
-        Collections.sort(resultsList, new DriverByPointsDescendingComparator(results));
+        resultsList.sort(new DriverByPointsDescendingComparator(results));
         return resultsList;
     }
 
