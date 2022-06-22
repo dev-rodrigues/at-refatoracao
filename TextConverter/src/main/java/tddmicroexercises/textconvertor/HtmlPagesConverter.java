@@ -10,7 +10,7 @@ public class HtmlPagesConverter {
 
     private String filename;
     private List<Integer> breaks = new ArrayList<Integer>();
-    
+
     public HtmlPagesConverter(String filename) throws IOException {
         this.filename = filename;
 
@@ -42,7 +42,7 @@ public class HtmlPagesConverter {
             }
             htmlPage.append(StringEscapeUtils.escapeHtml(line));
             htmlPage.append("<br />");
-            
+
             line = reader.readLine();
         }
         reader.close();
