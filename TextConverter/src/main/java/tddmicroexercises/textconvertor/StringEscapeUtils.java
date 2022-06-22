@@ -2,6 +2,9 @@ package tddmicroexercises.textconvertor;
 
 class StringEscapeUtils {
 
+    private StringEscapeUtils() {
+    }
+
     public static String escapeHtml(String input) {
         String output = input;
         output = output.replace("&", "&amp;");
