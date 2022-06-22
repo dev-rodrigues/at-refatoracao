@@ -23,24 +23,6 @@ class TestAlarm {
     }
 
     @Test
-    void isAlarmOnWhenInjectSensorInAlarm() {
-        Sensor sensor = mock(Sensor.class);
-        Mockito.when(sensor.popNextPressurePsiValue()).thenReturn(22.0);
-        Alarm alarm = new Alarm(sensor);
-        alarm.check();
-        assertTrue(alarm.isAlarmOn());
-    }
-
-    @Test
-    void isNotAlarmOnWhenInjectSensorInAlarm() {
-        Sensor sensor = mock(Sensor.class);
-        Mockito.when(sensor.popNextPressurePsiValue()).thenReturn(18.0);
-        Alarm alarm = new Alarm(sensor);
-        alarm.check();
-        assertFalse(alarm.isAlarmOn());
-    }
-
-    @Test
     void isAlarmOn() {
         Alarm alarm = new MockAlarm(30);
         alarm.check();
